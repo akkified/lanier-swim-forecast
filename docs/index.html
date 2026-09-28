@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lanier Swim Forecast</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1>Lanier Swim Forecast</h1>
+      <p class="sub">Estimated E. coli risk at Lake Lanier beaches for today and the next two days.</p>
+    </div>
+  </header>
+
+  <div id="demo-banner" class="banner" hidden>
+    Demo mode: this forecast uses made-up weather for testing. Do not use it to decide whether to swim.
+  </div>
+
+  <main class="wrap layout">
+    <section class="map-card">
+      <div id="map" aria-label="Map of Lake Lanier beaches"></div>
+      <div class="legend">
+        <span><i class="dot low"></i>Low risk</span>
+        <span><i class="dot caution"></i>Caution</span>
+        <span><i class="dot avoid"></i>Avoid swimming</span>
+      </div>
+    </section>
+
+    <section class="side">
+      <div class="day-tabs" id="day-tabs" role="tablist"></div>
+      <ul class="beach-list" id="beach-list"></ul>
+    </section>
+
+    <section class="detail" id="detail" hidden></section>
+
+    <section class="about">
+      <h2>How this works</h2>
+      <p>
+        Chattahoochee Riverkeeper tests Lake Lanier beaches once a week during swim season.
+        Between tests, conditions can change fast. This site uses a machine learning model trained on
+        <span id="n-samples">past</span> Riverkeeper samples, along with rainfall, temperature, river flow,
+        and lake level, to estimate the risk on days nobody is testing.
+      </p>
+      <p>
+        The swim limit is <strong><span id="threshold">235</span> E. coli per 100 mL</strong>, the EPA single sample
+        level that Swim Guide uses. Risk levels compare each day to how the model scored past high days.
+      </p>
+      <h3>How well it works</h3>
+      <p id="validation">Loading test results...</p>
+      <p class="fine">
+        These are estimates, not test results. The official results are the weekly samples posted on
+        <a href="https://www.theswimguide.org/affiliates/chattahoochee-riverkeeper" target="_blank" rel="noopener">Swim Guide</a>.
+        Sample data provided by Chattahoochee Riverkeeper. Weather from Open-Meteo. River and lake data from USGS.
+      </p>
+      <p class="fine" id="generated"></p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="model.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
