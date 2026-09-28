@@ -5,6 +5,7 @@
   --muted: #5d6a66;
   --line: #dfe4e1;
   --accent: #1f6f8b;
+  --brand: #1f6f8b; /* header and selected tab; stays dark enough for white text */
   --low: #2e8b57;
   --caution: #d19a1a;
   --avoid: #c0392b;
@@ -38,7 +39,7 @@ body {
 
 .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
 
-.top { background: var(--accent); color: #fff; padding: 20px 0 18px; }
+.top { background: var(--brand); color: #fff; padding: 20px 0 18px; }
 .top h1 { margin: 0; font-size: 1.6rem; }
 .top .sub { margin: 4px 0 0; opacity: 0.9; }
 
@@ -101,8 +102,8 @@ body {
   cursor: pointer;
 }
 .day-tabs button[aria-selected="true"] {
-  background: var(--accent);
-  border-color: var(--accent);
+  background: var(--brand);
+  border-color: var(--brand);
   color: #fff;
 }
 
