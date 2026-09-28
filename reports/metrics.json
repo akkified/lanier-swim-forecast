@@ -1,0 +1,84 @@
+{
+  "p_base": {
+    "auc": 0.435,
+    "brier": 0.0679,
+    "caught_in_top10pct": 0,
+    "total_high": 16
+  },
+  "p_lr": {
+    "auc": 0.793,
+    "brier": 0.1469,
+    "caught_in_top10pct": 5,
+    "total_high": 16
+  },
+  "p_gb": {
+    "auc": 0.463,
+    "brier": 0.0788,
+    "caught_in_top10pct": 2,
+    "total_high": 16
+  },
+  "range_model": {
+    "share_inside_10_90_range": 0.735,
+    "median_abs_error_log10": 0.59
+  },
+  "tested_samples": 302,
+  "by_season": {
+    "2019": {
+      "n": 33,
+      "high": 8
+    },
+    "2023": {
+      "n": 23,
+      "high": 0
+    },
+    "2024": {
+      "n": 35,
+      "high": 1
+    },
+    "2025": {
+      "n": 101,
+      "high": 6
+    },
+    "2026": {
+      "n": 110,
+      "high": 1
+    }
+  },
+  "mode": "online",
+  "features": [
+    "rain_today",
+    "rain_prev_1d",
+    "rain_prev_2d",
+    "rain_prev_3d",
+    "rain_prev_7d",
+    "days_since_big_rain",
+    "temp_max_3d",
+    "chestatee_flow_log",
+    "chestatee_flow_vs_30d",
+    "chattahoochee_flow_log",
+    "chattahoochee_flow_vs_30d",
+    "lake_level",
+    "lake_level_change_7d",
+    "season_sin",
+    "season_cos",
+    "weekend",
+    "site_buford-dam-park-beach",
+    "site_don-carter-state-park",
+    "site_mary-alice-park",
+    "site_olympic-park-beach",
+    "site_river-forks-park-beach",
+    "site_van-pugh-north",
+    "site_war-hill-park"
+  ],
+  "primary": "p_lr",
+  "primary_scores": {
+    "auc": 0.793,
+    "brier": 0.1469,
+    "caught_in_top10pct": 5,
+    "total_high": 16
+  },
+  "cutoffs": {
+    "avoid": 0.7605578378168688,
+    "caution": 0.45266956394964003
+  }
+}
