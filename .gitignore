@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+data/cache/
+.DS_Store
+
+# Riverkeeper data is shared privately, not published
+data/raw/lanier_swim_guide.xlsx
+data/processed/samples.csv
+reports/cv_predictions.csv
+models/
