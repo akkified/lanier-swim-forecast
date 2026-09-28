@@ -1,0 +1,378 @@
+{
+  "generated": "2026-09-28T01:03",
+  "demo": true,
+  "threshold": 235,
+  "model_mode": "online",
+  "validation": {
+    "primary": "p_lr",
+    "primary_scores": {
+      "auc": 0.793,
+      "brier": 0.1469,
+      "caught_in_top10pct": 5,
+      "total_high": 16
+    },
+    "p_base": {
+      "auc": 0.435,
+      "brier": 0.0679,
+      "caught_in_top10pct": 0,
+      "total_high": 16
+    },
+    "range_model": {
+      "share_inside_10_90_range": 0.735,
+      "median_abs_error_log10": 0.59
+    },
+    "tested_samples": 302
+  },
+  "sites": [
+    {
+      "id": "buford-dam-park-beach",
+      "name": "Buford Dam Park Beach",
+      "lat": 34.15712,
+      "lon": -84.063119,
+      "samples": 43,
+      "exceedances": 7,
+      "last_sample": {
+        "date": "2026-09-02",
+        "ecoli": 2.0
+      },
+      "days": [
+        {
+          "date": "2026-09-28",
+          "risk": 0.586,
+          "level": "caution",
+          "range": [
+            1.0,
+            8.9,
+            136.9
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.12
+        },
+        {
+          "date": "2026-09-29",
+          "risk": 0.671,
+          "level": "caution",
+          "range": [
+            1.0,
+            9.2,
+            151.5
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.01
+        },
+        {
+          "date": "2026-09-30",
+          "risk": 0.485,
+          "level": "caution",
+          "range": [
+            1.0,
+            12.4,
+            164.2
+          ],
+          "rain_today_in": 0.48,
+          "rain_prev_3d_in": 0.0
+        }
+      ]
+    },
+    {
+      "id": "don-carter-state-park",
+      "name": "Don Carter State Park ",
+      "lat": 34.38834,
+      "lon": -83.740748,
+      "samples": 34,
+      "exceedances": 1,
+      "last_sample": {
+        "date": "2026-09-01",
+        "ecoli": 1.0
+      },
+      "days": [
+        {
+          "date": "2026-09-28",
+          "risk": 0.367,
+          "level": "low",
+          "range": [
+            1.1,
+            8.4,
+            60.5
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.72
+        },
+        {
+          "date": "2026-09-29",
+          "risk": 0.24,
+          "level": "low",
+          "range": [
+            1.1,
+            11.1,
+            66.7
+          ],
+          "rain_today_in": 0.46,
+          "rain_prev_3d_in": 0.25
+        },
+        {
+          "date": "2026-09-30",
+          "risk": 0.273,
+          "level": "low",
+          "range": [
+            1.2,
+            8.9,
+            71.8
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.48
+        }
+      ]
+    },
+    {
+      "id": "mary-alice-park",
+      "name": "Mary Alice Park",
+      "lat": 34.20039,
+      "lon": -84.097659,
+      "samples": 39,
+      "exceedances": 2,
+      "last_sample": {
+        "date": "2026-09-03",
+        "ecoli": 5.2
+      },
+      "days": [
+        {
+          "date": "2026-09-28",
+          "risk": 0.217,
+          "level": "low",
+          "range": [
+            1.0,
+            8.2,
+            53.8
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.0
+        },
+        {
+          "date": "2026-09-29",
+          "risk": 0.171,
+          "level": "low",
+          "range": [
+            1.0,
+            10.2,
+            60.4
+          ],
+          "rain_today_in": 0.33,
+          "rain_prev_3d_in": 0.0
+        },
+        {
+          "date": "2026-09-30",
+          "risk": 0.055,
+          "level": "low",
+          "range": [
+            1.0,
+            12.9,
+            67.9
+          ],
+          "rain_today_in": 0.7,
+          "rain_prev_3d_in": 0.33
+        }
+      ]
+    },
+    {
+      "id": "olympic-park-beach",
+      "name": "Olympic Park Beach",
+      "lat": 34.352503,
+      "lon": -83.794711,
+      "samples": 72,
+      "exceedances": 2,
+      "last_sample": {
+        "date": "2026-09-01",
+        "ecoli": 2.0
+      },
+      "days": [
+        {
+          "date": "2026-09-28",
+          "risk": 0.33,
+          "level": "low",
+          "range": [
+            1.1,
+            9.2,
+            71.7
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.27
+        },
+        {
+          "date": "2026-09-29",
+          "risk": 0.378,
+          "level": "low",
+          "range": [
+            1.1,
+            8.8,
+            62.8
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.27
+        },
+        {
+          "date": "2026-09-30",
+          "risk": 0.195,
+          "level": "low",
+          "range": [
+            1.1,
+            8.2,
+            50.9
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.24
+        }
+      ]
+    },
+    {
+      "id": "river-forks-park-beach",
+      "name": "River Forks Park Beach",
+      "lat": 34.288926,
+      "lon": -83.906382,
+      "samples": 65,
+      "exceedances": 3,
+      "last_sample": {
+        "date": "2026-09-02",
+        "ecoli": 1.0
+      },
+      "days": [
+        {
+          "date": "2026-09-28",
+          "risk": 0.257,
+          "level": "low",
+          "range": [
+            1.0,
+            8.1,
+            81.6
+          ],
+          "rain_today_in": 0.44,
+          "rain_prev_3d_in": 0.69
+        },
+        {
+          "date": "2026-09-29",
+          "risk": 0.172,
+          "level": "low",
+          "range": [
+            1.1,
+            7.0,
+            79.3
+          ],
+          "rain_today_in": 0.17,
+          "rain_prev_3d_in": 0.44
+        },
+        {
+          "date": "2026-09-30",
+          "risk": 0.419,
+          "level": "low",
+          "range": [
+            1.0,
+            6.3,
+            78.1
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.61
+        }
+      ]
+    },
+    {
+      "id": "van-pugh-north",
+      "name": "Van Pugh North",
+      "lat": 34.187237,
+      "lon": -83.979142,
+      "samples": 17,
+      "exceedances": 1,
+      "last_sample": {
+        "date": "2026-08-20",
+        "ecoli": 6.3
+      },
+      "days": [
+        {
+          "date": "2026-09-28",
+          "risk": 0.345,
+          "level": "low",
+          "range": [
+            1.2,
+            9.1,
+            68.9
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.25
+        },
+        {
+          "date": "2026-09-29",
+          "risk": 0.215,
+          "level": "low",
+          "range": [
+            1.2,
+            8.8,
+            61.5
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.25
+        },
+        {
+          "date": "2026-09-30",
+          "risk": 0.176,
+          "level": "low",
+          "range": [
+            1.2,
+            8.6,
+            57.3
+          ],
+          "rain_today_in": 0.01,
+          "rain_prev_3d_in": 0.0
+        }
+      ]
+    },
+    {
+      "id": "war-hill-park",
+      "name": "War Hill Park",
+      "lat": 34.333338,
+      "lon": -83.964482,
+      "samples": 32,
+      "exceedances": 0,
+      "last_sample": {
+        "date": "2026-09-02",
+        "ecoli": 1.0
+      },
+      "days": [
+        {
+          "date": "2026-09-28",
+          "risk": 0.024,
+          "level": "low",
+          "range": [
+            1.0,
+            4.6,
+            13.8
+          ],
+          "rain_today_in": 0.16,
+          "rain_prev_3d_in": 0.22
+        },
+        {
+          "date": "2026-09-29",
+          "risk": 0.014,
+          "level": "low",
+          "range": [
+            1.0,
+            4.1,
+            12.4
+          ],
+          "rain_today_in": 0.02,
+          "rain_prev_3d_in": 0.38
+        },
+        {
+          "date": "2026-09-30",
+          "risk": 0.027,
+          "level": "low",
+          "range": [
+            1.0,
+            4.1,
+            12.8
+          ],
+          "rain_today_in": 0.0,
+          "rain_prev_3d_in": 0.19
+        }
+      ]
+    }
+  ]
+}
