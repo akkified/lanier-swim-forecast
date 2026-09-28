@@ -1,0 +1,58 @@
+[
+  {
+    "site_id": "buford-dam-park-beach",
+    "name": "Buford Dam Park Beach",
+    "lat": 34.15712,
+    "lon": -84.063119,
+    "samples": 43,
+    "exceedances": 7
+  },
+  {
+    "site_id": "don-carter-state-park",
+    "name": "Don Carter State Park ",
+    "lat": 34.38834,
+    "lon": -83.740748,
+    "samples": 34,
+    "exceedances": 1
+  },
+  {
+    "site_id": "mary-alice-park",
+    "name": "Mary Alice Park",
+    "lat": 34.20039,
+    "lon": -84.097659,
+    "samples": 39,
+    "exceedances": 2
+  },
+  {
+    "site_id": "olympic-park-beach",
+    "name": "Olympic Park Beach",
+    "lat": 34.352503,
+    "lon": -83.794711,
+    "samples": 72,
+    "exceedances": 2
+  },
+  {
+    "site_id": "river-forks-park-beach",
+    "name": "River Forks Park Beach",
+    "lat": 34.288926,
+    "lon": -83.906382,
+    "samples": 65,
+    "exceedances": 3
+  },
+  {
+    "site_id": "van-pugh-north",
+    "name": "Van Pugh North",
+    "lat": 34.187237,
+    "lon": -83.979142,
+    "samples": 17,
+    "exceedances": 1
+  },
+  {
+    "site_id": "war-hill-park",
+    "name": "War Hill Park",
+    "lat": 34.333338,
+    "lon": -83.964482,
+    "samples": 32,
+    "exceedances": 0
+  }
+]
